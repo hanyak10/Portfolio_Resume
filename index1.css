@@ -49,6 +49,9 @@ section{
   font-weight: 600;
   cursor: default;
 }
+.logo:hover{
+  cursor: pointer;
+}
 .navbar a{
   font-size: 1.7rem;
   color: (var(--text-color));
@@ -71,6 +74,10 @@ section{
   align-items: center;
 }
 .home-content h3{
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+.about-content h3{
   font-size: 3.2rem;
   font-weight: 700;
 }
@@ -127,6 +134,7 @@ span{
 }
 .btn:hover{
   box-shadow: none;
+  cursor: pointer;
 }
 .about{
   display: flex;
@@ -188,6 +196,13 @@ span{
   font-size: 1.6rem;
   margin:1rem 0 3rem;
 }
+.service-box ul{
+  font-size: 1.3rem;
+  margin:1rem 0 3rem;
+}
+#cloud,#java,#web{
+display: none;
+}
 .portfolio{
   background: var(--second-bg-color);
 }
@@ -240,15 +255,19 @@ span{
   font-size: 15px;
   margin: .3rem 0 1rem;
 }
-.portfolio-layer a{
+.code{
+  height: auto;
+}
+/* .portfolio-layer a{
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 5rem;
-  height: 5em;
+  width: ;
+  height: ;
   background: var(--text-color);
   border-radius: 50%;
-}
+} */
+
 .contact h2{
   margin-bottom:3rem;
 }
@@ -331,7 +350,7 @@ span{
 @media (max-width:768px)
 {
   #menu-icon{
-    display: block;
+    display: initial;
   }
   .navbar{
     position: absolute;
@@ -340,7 +359,7 @@ span{
     width: 100%;
     padding: 1rem 3%;
     background: var(--bg-color);
-    border-top: .1rem rgba(0,0,0,.2);
+    border-top: .1rem solid rgba(0,0,0,.2);
     box-shadow: 0 .5rem 1 rem rgba(0,0,0,.2);
     display: none;
   }

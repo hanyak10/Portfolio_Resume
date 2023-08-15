@@ -17,7 +17,7 @@ window.onscroll=()=>{
         let top = window.scrollY;
         let offset = sec.offsetTop-150;
         let height= sec.offsetHeight;
-        let id = sec.getAttribute('id');
+        let id = sec.getAttribute('id'); 
 
         if(top=> offset && top< offset+height){
             navLinks.forEach(links =>{
@@ -29,7 +29,7 @@ window.onscroll=()=>{
     /* sticky navbar */
     let header= document.querySelector('header');
     
-    header.classList.toggle('sticky',window.scrollY>100);
+    header.classList.toggle('sticky',window.scrollY > 100);
     /* remove toogle icon and navbar when click navbar link */
     menuIcon.classList.remove('bx-x');
     navbar.classList.remove('active');
@@ -55,3 +55,27 @@ const typed= new Typed('.multiple-text',{
     backDelay:1000,
     loop:true
 });
+function myFunction(){
+    var x = document.getElementById("cloud");
+    if(x.style.display==="none"){
+        x.style.display ="block";
+    }else{
+        x.style.display ="none" ;
+    }
+}
+function myFunctionj(){
+    var x = document.getElementById("java");
+    if(x.style.display==="none"){
+        x.style.display ="block";
+    }else{
+        x.style.display ="none" ;
+    }
+}
+function myFunctionw(){
+    var x = document.getElementById("web");
+    if(x.style.display==="none"){
+        x.style.display ="block";
+    }else{
+        x.style.display ="none" ;
+    }
+}
